@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor ♥</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff6b9d, #c44569, #f8b500);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            font-family: 'Georgia', serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .title {
+            color: #c44569;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .bear-container {
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .bear-image {
+            width: 350px;
+            height: 400px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            animation: bearFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes bearFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-5px) rotate(1deg); }
+            50% { transform: translateY(0px) rotate(0deg); }
+            75% { transform: translateY(-3px) rotate(-1deg); }
+        }
+
+        .bear-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 400"><defs><radialGradient id="bearBody" cx="50%" cy="40%" r="60%"><stop offset="0%" style="stop-color:%23DEB887;stop-opacity:1" /><stop offset="70%" style="stop-color:%23CD853F;stop-opacity:1" /><stop offset="100%" style="stop-color:%238B4513;stop-opacity:1" /></radialGradient><radialGradient id="bearBelly" cx="50%" cy="50%" r="40%"><stop offset="0%" style="stop-color:%23F5DEB3;stop-opacity:1" /><stop offset="100%" style="stop-color:%23DEB887;stop-opacity:1" /></radialGradient><radialGradient id="bearEars" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:%23CD853F;stop-opacity:1" /><stop offset="100%" style="stop-color:%23A0522D;stop-opacity:1" /></radialGradient></defs><ellipse cx="175" cy="200" rx="80" ry="100" fill="url(%23bearBody)" stroke="%23654321" stroke-width="3"/><ellipse cx="175" cy="220" rx="50" ry="70" fill="url(%23bearBelly)"/><circle cx="175" cy="160" rx="60" ry="55" fill="url(%23bearBody)" stroke="%23654321" stroke-width="2"/><circle cx="135" cy="120" r="25" fill="url(%23bearEars)" stroke="%23654321" stroke-width="2"/><circle cx="215" cy="120" r="25" fill="url(%23bearEars)" stroke="%23654321" stroke-width="2"/><circle cx="135" cy="120" r="12" fill="%238B4513"/><circle cx="215" cy="120" r="12" fill="%238B4513"/><ellipse cx="175" cy="170" rx="15" ry="10" fill="%23F5DEB3"/><circle cx="160" cy="150" r="8" fill="%23000000"/><circle cx="190" cy="150" r="8" fill="%23000000"/><circle cx="160" cy="150" r="3" fill="%23FFFFFF"/><circle cx="190" cy="150" r="3" fill="%23FFFFFF"/><ellipse cx="175" cy="175" rx="8" ry="6" fill="%23000000"/><path d="M170 185 Q175 195 180 185" fill="none" stroke="%23000000" stroke-width="3" stroke-linecap="round"/><ellipse cx="120" cy="250" rx="20" ry="35" fill="url(%23bearBody)" stroke="%23654321" stroke-width="2"/><ellipse cx="230" cy="250" rx="20" ry="35" fill="url(%23bearBody)" stroke="%23654321" stroke-width="2"/><ellipse cx="120" cy="270" rx="12" ry="8" fill="%23F5DEB3"/><ellipse cx="230" cy="270" rx="12" ry="8" fill="%23F5DEB3"/><ellipse cx="140" cy="320" rx="25" ry="15" fill="%23654321"/><ellipse cx="210" cy="320" rx="25" ry="15" fill="%23654321"/><ellipse cx="140" cy="315" rx="18" ry="10" fill="%23F5DEB3"/><ellipse cx="210" cy="315" rx="18" ry="10" fill="%23F5DEB3"/><circle cx="135" cy="315" r="3" fill="%23000000"/><circle cx="145" cy="315" r="3" fill="%23000000"/><circle cx="140" cy="320" r="3" fill="%23000000"/><circle cx="205" cy="315" r="3" fill="%23000000"/><circle cx="215" cy="315" r="3" fill="%23000000"/><circle cx="210" cy="320" r="3" fill="%23000000"/><text x="175" y="360" text-anchor="middle" fill="%238B4513" font-size="18" font-weight="bold">Mi Osito de Amor ♥</text></svg>') center/contain no-repeat;
+            opacity: 1;
+        }
+
+        .poem {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #2d3436;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .poem::before {
+            content: '♥';
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 2em;
+            color: #e17055;
+            opacity: 0.3;
+        }
+
+        .poem::after {
+            content: '♥';
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            font-size: 2em;
+            color: #e17055;
+            opacity: 0.3;
+        }
+
+
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff6b9d;
+            font-size: 20px;
+            animation: floatUp 4s linear infinite;
+            opacity: 0.7;
+        }
+
+        .rose {
+            position: absolute;
+            color: #e74c3c;
+            font-size: 25px;
+            animation: roseFloat 5s linear infinite;
+            opacity: 0.8;
+        }
+
+        .sparkle {
+            position: absolute;
+            color: #f1c40f;
+            font-size: 15px;
+            animation: sparkleFloat 3s linear infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-50px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes roseFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg) scale(0.5);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(50vh) rotate(180deg) scale(1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-50px) rotate(360deg) scale(0.3);
+                opacity: 0;
+            }
+        }
+
+        @keyframes sparkleFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg) scale(0.2);
+                opacity: 1;
+            }
+            25% {
+                transform: translateY(75vh) rotate(90deg) scale(1.5);
+                opacity: 0.9;
+            }
+            50% {
+                transform: translateY(50vh) rotate(180deg) scale(0.8);
+                opacity: 0.7;
+            }
+            75% {
+                transform: translateY(25vh) rotate(270deg) scale(1.2);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-50px) rotate(360deg) scale(0.1);
+                opacity: 0;
+            }
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #c44569;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts" id="effects"></div>
+    
+    <div class="container">
+        <h1 class="title">Para Ti, Mi Amor ♥</h1>
+        
+        <div class="bear-container">
+            <div class="bear-image">
+            </div>
+        </div>
+
+        <div class="poem">
+            <strong>Para Mi Amor Eterno</strong><br><br>
+            
+            Como este osito tierno y fiel,<br>
+            que te abraza con cariño,<br>
+            así es mi corazón por ti,<br>
+            desde que eras una niña.<br><br>
+            
+            En cada sonrisa tuya encuentro<br>
+            la luz que ilumina mi día,<br>
+            eres mi tesoro más preciado,<br>
+            mi más bella fantasía.<br><br>
+            
+            Te amo más que a las estrellas,<br>
+            más que al sol en el amanecer,<br>
+            eres mi osita preferida,<br>
+            mi razón de ser y crecer.<br><br>
+            
+            <em>Con todo mi amor infinito,<br>
+            tu novio que te adora ♥</em>
+        </div>
+
+
+
+        <div class="signature">
+            Hecho con amor para la chica más especial del mundo ♥
+        </div>
+    </div>
+
+    <script>
+        // Crear efectos visuales múltiples
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '♥';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            heart.style.fontSize = (Math.random() * 10 + 15) + 'px';
+            
+            document.getElementById('effects').appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 4000);
+        }
+
+        function createRose() {
+            const rose = document.createElement('div');
+            rose.className = 'rose';
+            rose.innerHTML = '🌹';
+            rose.style.left = Math.random() * 100 + '%';
+            rose.style.animationDuration = (Math.random() * 2 + 3) + 's';
+            rose.style.fontSize = (Math.random() * 15 + 20) + 'px';
+            
+            document.getElementById('effects').appendChild(rose);
+            
+            setTimeout(() => {
+                rose.remove();
+            }, 5000);
+        }
+
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            const sparkleSymbols = ['✨', '⭐', '💫', '🌟'];
+            sparkle.innerHTML = sparkleSymbols[Math.floor(Math.random() * sparkleSymbols.length)];
+            sparkle.style.left = Math.random() * 100 + '%';
+            sparkle.style.animationDuration = (Math.random() * 2 + 2) + 's';
+            sparkle.style.fontSize = (Math.random() * 8 + 12) + 'px';
+            
+            document.getElementById('effects').appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 3000);
+        }
+
+        // Crear diferentes efectos con intervalos variados
+        setInterval(createHeart, 600);
+        setInterval(createRose, 1200);
+        setInterval(createSparkle, 400);
+
+        // Efecto de pulso en el contenedor
+        setInterval(() => {
+            const container = document.querySelector('.container');
+            container.style.transform = 'scale(1.02)';
+            setTimeout(() => {
+                container.style.transform = 'scale(1)';
+            }, 200);
+        }, 8000);
+    </script>
+</body>
+</html>
